@@ -36,7 +36,7 @@ void inicializar_monstruos(monster_t monsters[] ,int cantidad) {
 }
 
 void inicializar_monstruo(monster_t monsters) {
-    for(char atributo = 0; atributo < CANT_DANIOS; atributo++) {
+    for(char atributo = 0; atributo < CANT_ATRIBUTOS; atributo++) {
         int atributo_random = numero_al_azar(ATRIBUTOS_LINF, ATRIBUTOS_LSUP);
 
         if(atributo < CANT_DANIOS) monsters.danios[atributo].puntos = atributo_random;
